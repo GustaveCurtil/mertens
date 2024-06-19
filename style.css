@@ -1,0 +1,88 @@
+*, html {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --header-height: 80px;
+    --padding: 20px;
+}
+
+body {
+    width: 100vw;
+    height: 100svh;
+
+    background-color: #3e84d0;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: var(--header-height) 4fr var(--header-height);
+    grid-template-areas: 
+    "header title"
+    "nav main"
+    "telephone footer";
+}
+
+.title {
+    grid-area: title;
+}
+
+.telephone {
+    grid-area: telephone;
+}
+
+/*/ / HEADER / /*/
+header {
+    display: flex;
+    align-items: center;
+
+    font-size: xx-large;
+
+    padding: var(--padding);
+}
+
+/*/ / NAV / /*/
+nav {
+    padding: var(--padding);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: xx-large;
+}
+
+/*/ / TITLE / /*/
+.title {
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+
+    padding: var(--padding);
+}
+
+/*/ / main / / */
+main {
+    font-size: larger;
+    padding: var(--padding);
+}
+
+/*/ / TELEPHONE / /*/
+.telephone {
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    padding: var(--padding);
+}
+
+/*/ / FOOTER / /*/
+footer {
+    display: flex;
+
+    font-size: xx-large;
+    padding: var(--padding);
+}
