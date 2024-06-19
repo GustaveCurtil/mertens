@@ -4,7 +4,11 @@ let title = document.querySelector('.title h2');
 
 for (let i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener('click', (e) => {
-        title.innerHTML = tabs[i].innerHTML;
+        if (i===0) {
+            title.innerHTML = "";
+        } else {
+            title.innerHTML = tabs[i].innerHTML;
+        }
         tabs.forEach(tab => {
             tab.classList.remove('current');
         });
