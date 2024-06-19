@@ -4,7 +4,7 @@
 }
 
 :root {
-    --header-height: 80px;
+    --header-height: 140px;
     --padding: 20px;
 }
 
@@ -20,7 +20,7 @@ body {
     font-family: "Roboto", sans-serif;
 
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: var(--header-height) 4fr var(--header-height);
     grid-template-areas: 
     "header title"
@@ -105,7 +105,8 @@ main {
 /*/ / TELEPHONE / /*/
 .telephone {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     font-size: xx-large;
     padding: var(--padding);
 }
@@ -113,6 +114,8 @@ main {
 /*/ / FOOTER / /*/
 footer {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     font-size: xx-large;
     padding: var(--padding);
