@@ -7,7 +7,7 @@
     --header-height: 140px;
     --padding: 20px;
     --color-bg1: #3e84d0;
-    --color-bg2: #2363a7;
+    --color-bg2: #387bc2;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -64,6 +64,7 @@ header {
     align-items: center;
 
     font-size: xx-large;
+    background-color: var(--color-bg2);
 
     padding: var(--padding);
 }
@@ -71,7 +72,7 @@ header {
 /*/ / NAV / /*/
 nav {
     padding: var(--padding);
-    /* background-color: var(--color-bg2); */
+    background-color: var(--color-bg2);
 }
 
 ul {
@@ -125,6 +126,7 @@ main {
     font-size: x-large;
     line-height: 32px;
     padding: var(--padding);
+    background-color: var(--color-bg2);
 }
 
 .contact>.links {
