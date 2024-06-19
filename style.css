@@ -53,22 +53,34 @@ ul {
 }
 
 li {
-    font-size: xx-large;
+    font-size: 42px;
+}
+
+.current {
+    text-decoration: underline;
 }
 
 /*/ / TITLE / /*/
 .title {
     display: flex;
     align-items: center;
-    font-size: xx-large;
 
     padding: var(--padding);
 }
 
+h2 {
+    font-size: 42px;
+}
+
 /*/ / main / / */
 main {
+    display: none;
     font-size: larger;
     padding: var(--padding);
+}
+
+.active {
+    display: block;
 }
 
 /*/ / TELEPHONE / /*/
