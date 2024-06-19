@@ -8,13 +8,16 @@
     --padding: 20px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
     width: 100vw;
     height: 100svh;
 
     background-color: #3e84d0;
+    color: rgb(238, 238, 238);
 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
 
     display: grid;
     grid-template-columns: 2fr 5fr;
@@ -31,6 +34,16 @@ body {
 
 .telephone {
     grid-area: telephone;
+}
+
+
+/*/ / GENERAL / /*/
+p {
+    font-weight: 300;
+}
+
+h2, nav ul li {
+    font-weight: 400;
 }
 
 /*/ / HEADER / /*/
@@ -54,10 +67,16 @@ ul {
 
 li {
     font-size: 42px;
+    text-underline-offset: 6px;
 }
 
 .current {
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+li:hover:not(.current) {
+    color: rgb(206, 208, 255);
 }
 
 /*/ / TITLE / /*/
