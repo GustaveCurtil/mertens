@@ -111,6 +111,7 @@ main {
     font-size: larger;
     padding: var(--padding);
     overflow-y: auto;
+    padding-right: calc(8 * var(--padding));
 }
 
 .active {
