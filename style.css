@@ -114,7 +114,6 @@ main {
     font-size: larger;
     padding: var(--padding);
     padding-top: 0;
-    padding-bottom: var(--header-height);
     overflow-y: auto;
     padding-right: calc(8 * var(--padding));
 }
@@ -165,10 +164,11 @@ footer p {
 #home .photowrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: var(--padding);
 }
 
 img {
     height: 280px;
+    padding: var(--padding) 0;
     object-fit: fill;
 }
