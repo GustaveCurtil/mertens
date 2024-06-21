@@ -160,7 +160,7 @@ footer p {
 }
 
 /*/ / HOME / /*/
-#home .photowrapper {
+.photowrapper {
     display: flex;
     flex-wrap: wrap;
     gap: var(--padding);
