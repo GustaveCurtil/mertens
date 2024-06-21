@@ -38,14 +38,14 @@ body {
 
 /*/ / GENERAL / /*/
 p {
-    font-weight: 300;
+    font-weight: normal;
     padding-bottom: 10px;
 }
 
 h3 {
     margin-top: var(--padding);
     padding: 10px 0;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 h3:first-of-type {
@@ -65,6 +65,10 @@ header {
     /* background-color: var(--color-bg2); */
 
     padding: var(--padding);
+}
+
+#logo {
+    height: calc(var(--header-height) - (2 * var(--padding)));
 }
 
 /*/ / NAV / /*/
@@ -160,6 +164,12 @@ footer p {
 }
 
 /*/ / HOME / /*/
+#home p {
+    font-size: x-large;
+    font-weight: normal;
+}
+
+
 .photowrapper {
     display: flex;
     flex-wrap: wrap;
