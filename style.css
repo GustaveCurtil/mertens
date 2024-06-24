@@ -94,6 +94,8 @@ li {
 
 li:hover:not(.current) {
     color: rgba(238, 238, 238, 0.9);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 /*/ / TITLE / /*/
@@ -176,8 +178,41 @@ footer p {
     gap: var(--padding);
 }
 
+/*/ / PHOTOS / /*/
+
 img {
-    height: 280px;
+    height: 300px;
     padding: var(--padding) 0;
-    object-fit: fill;
+    object-fit: cover;
 }
+
+#voorstelling img, #home img {
+    width: 100%;
+    height: auto;
+}
+
+/*/ / TextBlocks / /*/
+.block {
+    width: 47.5%;
+}
+
+.text-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*/ / VOORSTELLING / /*/
+#voorstelling img {
+    aspect-ratio: 4/3;
+}
+
+/*/ / ACTIVITEITEN / /*/
+#activiteiten .text-blocks img {
+    width: calc(50% - 0.5 * var(--padding));
+}
+
+#activiteiten>:last-child img{
+    width: calc((100% / 3) - 0.75 * var(--padding));
+}
+
